@@ -7,6 +7,7 @@ import { useEffect } from 'react'
 function App() {
 
   const [product, setProduct] = useState([]);
+  const [count, setCount] = useState([]);
 
   useEffect(()=>{
     fetch('./data.json')
@@ -16,11 +17,13 @@ function App() {
     })
   }, [])
 
+
+
   // console.log(dolls)
 
   return (
     <>
-    <div>
+    <div className='grid grid-cols-1 md:grid-cols-6'>
     {
         product.map((pd)=>(
           <Home products={pd} key={pd.id}></Home>

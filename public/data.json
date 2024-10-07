@@ -2,6 +2,7 @@
     {
       "id": 1,
       "name": "Leanne Graham",
+      "price": 112.5,
       "username": "Bret",
       "email": "Sincere@april.biz",
       "img": "https://img.freepik.com/premium-photo/doll-with-pink-dress-white-dress-with-pink-flowers_1209683-6408.jpg?uid=R46318918&ga=GA1.1.2056536875.1728146677&semt=ais_hybrid"
@@ -10,12 +11,14 @@
         "id": 2,
         "name": "Mr. Graham",
         "username": "Bret",
+        "price": 122.5,
         "email": "Sincere@april.biz",
         "img":"https://www.freepik.com/free-photo/cute-baby-doll-children-still-life_72288793.htm#fromView=search&page=1&position=40&uuid=1aef2d8d-7303-4187-93e4-d063725c072a"
       },
       {
         "id": 3,
         "name": "Sr. Leanne",
+        "price": 11.25,
         "username": "Bret",
         "email": "Sincere@april.biz",
         "img":"https://img.freepik.com/premium-photo/doll-with-red-hair-sits-pile-balloons_1209683-6406.jpg?uid=R46318918&ga=GA1.1.2056536875.1728146677&semt=ais_hybrid"
@@ -23,6 +26,7 @@
       {
         "id": 4,
         "name": "L. Graham",
+        "price": 132.5,
         "username": "Bret",
         "email": "Sincere@april.biz",
         "img":"https://www.freepik.com/premium-ai-image/doll-with-pink-bow-it-sits-purple-background-with-balloons-pink-ribbon_244271850.htm#fromView=search&page=1&position=45&uuid=1aef2d8d-7303-4187-93e4-d063725c072a"
