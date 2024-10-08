@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Home = ({ products, handleCart }) => {
+
+  const [imgSrc, setImgSrc] = useState(products.img);
+
+  const handleImageError = () => {
+    setImgSrc("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ_2oII-AssPFNOvcLQ6ecJ6ZWQlUbKU3j8w&s");
+  };
   // console.log(products, 'hello heros')
   return (
     <div className=''>
       <div className="card bg-base-100  shadow-xl">
 
         <figure>
-          <img
-            src={(products.img ? 'https://www.walmart.com/ip/Gerber-Baby-Boy-or-Girl-Unisex-White-Short-Sleeve-Cotton-Bodysuit-3-Pack-Sizes-Preemie-24-Months/2275547541?classType=VARIANT&from=/search')}
-            alt="Gerber Clothing" />
+        <img
+          src={imgSrc}
+          onError={handleImageError}
+        />
         </figure>
         <div className="card-body">
           <h2 className="card-title">Taka</h2>
