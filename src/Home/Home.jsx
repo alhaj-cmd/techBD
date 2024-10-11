@@ -22,6 +22,7 @@ const Home = ({ products, handleCart }) => {
           <h2 className="card-title">Taka</h2>
           <p>If a dog chews shoes whose shoes does he choose?</p>
           <div className="card-actions justify-end">
+            <p>{products.price}</p>
             <button  className="btn btn-primary">Buy Now</button>
           </div>
         </div>
