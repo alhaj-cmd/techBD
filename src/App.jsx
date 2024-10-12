@@ -19,7 +19,7 @@ function App() {
 
   const handleCart = (tk) =>{
     const isNumber = count.find(item => item.id == tk.id);
-    console.log(isNumber)
+    console.log(isNumber,'data loaded')
     setCount([])
   }
 

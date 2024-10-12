@@ -23,7 +23,7 @@ const Home = ({ products, handleCart }) => {
           <p>If a dog chews shoes whose shoes does he choose?</p>
           <div className="card-actions justify-end">
             <p>{products.price}</p>
-            <button  className="btn btn-primary">Buy Now</button>
+            <button onClick={()=>handleCart(products)} className="btn btn-primary">Buy Now</button>
           </div>
         </div>
       </div>
