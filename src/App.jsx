@@ -18,9 +18,10 @@ function App() {
   }, [])
 
   const handleCart = (tk) =>{
-    const isNumber = count.find(item => item.id == tk.id);
-    console.log(isNumber,'data loaded')
-    setCount([])
+    console.log('tk peyeci', tk)
+    // const isNumber = count.find(item => item.id == tk.id);
+    // isNumber
+    setCount([tk])
   }
 
 
@@ -39,11 +40,11 @@ function App() {
       </div>
       <div className="text-center">
         <h1 className='text-3xl'>This is Summary</h1>
-        {/* {
+        {
           count.map((Count)=>(
-            console.log(Count)
+            <p>{Count.price}</p>
           ))
-        } */}
+        }
       </div>
     </div>
   )
