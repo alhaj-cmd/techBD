@@ -43,6 +43,7 @@ function App() {
         {
           count.map((Count)=>(
             <p>{Count.price}</p>
+            
           ))
         }
       </div>
