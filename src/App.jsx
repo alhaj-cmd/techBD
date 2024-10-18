@@ -17,11 +17,19 @@ function App() {
       })
   }, [])
 
-  const handleCart = (tk) =>{
-    console.log('tk peyeci', tk)
-    // const isNumber = count.find(item => item.id == tk.id);
+  const handleCart = (p) =>{
+    // console.log('tk peyeci', p)
+    const isNumber = count.find((item) => item.id ==  p.id);
+    // console.log(isNumber);
+    if (!isNumber){
+      setCount([...count, p])
+    }
+    else{
+      alert('Al ready exit')
+    }
+    
     // isNumber
-    setCount([tk])
+    setCount([p])
   }
 
 
