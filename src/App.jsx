@@ -18,7 +18,7 @@ function App() {
   }, [])
 
   const handleCart = (p) =>{
-    // console.log('tk peyeci', p)
+    console.log('tk peyeci', p)
     const isNumber = count.find((item) => item.id ==  p.id);
     // console.log(isNumber);
     if (!isNumber){
@@ -28,13 +28,14 @@ function App() {
       alert('Al ready exit')
     }
     
-    // isNumber
-    setCount([p])
   }
 
+const handleDel = (d) =>{
+  const deleteItem = count.filter(item => item.id != d);
+  setCount(deleteItem);
+}
 
-
-  // console.log(dolls)
+ 
 
   return (
 
@@ -50,7 +51,10 @@ function App() {
         <h1 className='text-3xl'>This is Summary</h1>
         {
           count.map((Count)=>(
-            <p>{Count.price}</p>
+           <div>
+             <p>{Count.price}</p>
+             <button onClick={()=> handleDel(Count.id)} >Delete</button>
+           </div>
             
           ))
         }
